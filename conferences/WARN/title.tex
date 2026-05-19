@@ -1,0 +1,23 @@
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+
+\author{$for(by-author)$$by-author.name.literal$$sep$, $endfor$}
+$for(affiliations)$
+\affil{$affiliations.name$}
+$endfor$
+
+\date{$date$}
+
+\usepackage{xcolor}
+\definecolor{mylinkcolor}{HTML}{0563C1}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = mylinkcolor,
+  citecolor  = mylinkcolor,
+  urlcolor   = mylinkcolor
+}

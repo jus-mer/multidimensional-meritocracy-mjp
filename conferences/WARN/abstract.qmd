@@ -1,0 +1,134 @@
+---
+title: "Preferences for Market-Based Welfare: Disentangling the role of merit and privilege beliefs"
+date: last-modified
+date-format: "MMMM DD, YYYY"
+format:
+  html: 
+    latex-environment: true
+    code-fold: true
+    html-math-method: katex
+    number-sections: true
+    code-link: true
+    title-block-banner: true
+    theme:
+      - pretty.scss
+  pdf: 
+    pdf-engine: xelatex
+    geometry: margin=2cm
+    template-partials: 
+      - title.tex
+    keep-tex: true
+    include-in-header:
+      text: |
+        \usepackage[noblocks]{authblk}
+        \renewcommand*{\Authsep}{, }
+        \renewcommand*{\Authand}{, }
+        \renewcommand*{\Authands}{, }
+        \renewcommand\Affilfont{\small}
+    number-sections: true
+editor: source
+bibliography: "../../input/bib/jusmer.bib"
+csl: "../../input/bib/apa6.csl"
+author:
+  - name: Andreas Laffert
+    corresponding: true
+    orcid: 0000-0002-9008-2454
+    email: andreas.laffert@uchile.cl 
+    affiliations:
+      - ref: 1
+  - name: Juan Carlos Castillo
+    orcid: 0000-0003-1265-7854
+    email: juancastillov@uchile.cl
+    affiliations:
+      - ref: 1
+  - name: René Canales
+    orcid: 0009-0002-4299-2725
+    email: renecanales@uc.cl
+    affiliations:
+      - ref: 1    
+  - name: Tomás Urzúa
+    orcid: 0009-0008-3167-6819
+    email: tomas.urzua@ug.chile.cl
+    affiliations:
+      - ref: 1    
+affiliations: 
+  - id: 1
+    name: Department of Sociology, University of Chile
+citeproc: true
+link-citations: true
+linestretch: 1.5
+mainfont: Times New Roman
+fontsize: 13pt          
+colorlinks: true
+fig-height: 4
+fig-width: 7.5
+---
+
+
+```{r setup, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo=FALSE, 
+                      warning = FALSE,
+                      message = FALSE, 
+                      cache = TRUE,
+                      out.width = '85%',
+                      fig.pos= "H")
+options(scipen=999)
+options(kableExtra.auto_format = FALSE)
+options(knitr.kable.NA = '')
+options(knitr.graphics.error = FALSE)
+Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
+table_format = if (knitr::is_html_output()) {
+   #conditional instructions for kable
+   "html" #if html set "html" in format
+ } else if (knitr::is_latex_output()) {
+   "latex"#if latex set "latex" in format
+ }
+
+library(conflicted)
+conflicts_prefer(dplyr::filter)
+
+.count_words <- function() {
+  f <- knitr::current_input()
+  if (is.null(f)) return(NA_integer_)
+  lines <- readLines(f, warn = FALSE)
+  delims <- which(trimws(lines) == "---")
+  if (length(delims) >= 2) lines <- lines[(delims[2] + 1):length(lines)]
+  in_chunk <- FALSE
+  body <- character()
+  for (l in lines) {
+    if (grepl("^```", l)) { in_chunk <- !in_chunk; next }
+    if (!in_chunk) body <- c(body, l)
+  }
+  text <- paste(body, collapse = " ")
+  text <- gsub("@[\\w:_-]+", "", text, perl = TRUE)
+  text <- gsub("<[^>]+>", " ", text)
+  text <- gsub("[^[:alpha:][:space:]]", " ", text)
+  words <- strsplit(trimws(text), "\\s+")[[1]]
+  sum(nchar(words) > 0)
+}
+.wc <- .count_words()
+
+```
+
+
+::: {.small .text-muted}
+Word count: `r .wc`
+:::
+
+:::: {.justify}
+
+
+**Background and relevance**. The commodification of social welfare has reshaped not only how services are delivered but also the moral frameworks through which citizens evaluate who deserves what and why [@koos_moral_2019; @mau_inequality_2015; @vanoorschot_social_2017]. Comparative welfare state research has increasingly documented that marketization generates policy feedback effects on public attitudes, strengthening support for market-based allocation of core services such as health, education, and pensions; a phenomenon captured by the concept of market justice preferences [@busemeyer_welfare_2020; @castillo_justification_2026; @castillo_perceptions_2025; @immergut_it_2020; @svallfors_political_2007; @lindh_public_2015; @zhu_policy_2015]. Within this moral economy framework [@svallfors_moral_2006], criteria of deservingness play a central role in mediating the ways in which structural conditions shape welfare attitudes. Drawing on the NICER framework [@knotz_recast_2022], this paper focuses on the effort dimension of deservingness, operationalized through meritocratic beliefs, as a key normative driver of preferences for market justice. Chile offers a paradigmatic case: decades of deep welfare commodification have institutionalized individual responsibility as the dominant principle in pensions, education, and health [@madariaga_three_2020], making it an especially fertile context for examining how meritocracy legitimizes market-based access to welfare.
+
+**Research question and objective**. This study examines how multidimensional meritocratic beliefs, encompassing both meritocratic and non-meritocratic (privilege-based) perceptions and preferences, shape support for market-based welfare across three domains: health, education, and pensions. A key contribution is the explicit inclusion of non-meritocratic beliefs (i.e., perceptions and endorsements of privilege as a mechanism of social advancement), which the existing literature has largely sidelined.
+
+**Data and methods**. We analyze cross-sectional data from a survey of urban Chilean adults ($N$ = 2,557). Market justice preferences are measured using items that assess the perceived fairness of income-based access to health, education, and pensions. Meritocratic beliefs are operationalized following a multidimensional approach [@castillo_multidimensional_2023], distinguishing between meritocratic (effort and talent are rewarded) and non-meritocratic (privilege and connections drive success) perceptions and preferences. Structural equation modeling (SEM) is used to estimate the associations between these four belief dimensions and market justice preferences [@kline_principles_2023].
+
+**Findings and implications**. Results show that meritocratic perceptions are positively associated with market justice preferences, replicating prior findings [@castillo_justification_2026]. Non-meritocratic perceptions (perceiving privilege) are negatively associated, suggesting that awareness of unearned advantage undermines support for market allocation. Meritocratic preferences show no significant effect, possibly due to limited variance. Notably, the strongest effect is observed for non-meritocratic preferences: individuals who endorse privilege as a legitimate basis for social reward show significantly higher market-justice preferences, the largest effect in the model. These findings extend our understanding of how deservingness beliefs operate across welfare domains, and highlight that embracing non-meritocratic principles does not necessarily imply opposition to market-based welfare. Methodologically, the study advances the importance of disaggregating meritocratic beliefs into normative and descriptive dimensions in the study of welfare attitudes.
+
+# References
+
+::: {#refs}
+:::
+::::
+

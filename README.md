@@ -64,6 +64,4 @@ In the web page it is possible to see/download the paper in html and pdf formats
 ## Files:
 
 
-- [File 1](link)
-- [File 2](link)
-- [File N](link)
+- [Abstract WARN Html Version](https://jus-mer.github.io/multidimensional-meritocracy-mjp/conferences/WARN/abstract.html)

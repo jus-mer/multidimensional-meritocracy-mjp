@@ -1,0 +1,399 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  13pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Times New Roman}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage[noblocks]{authblk}
+\renewcommand*{\Authsep}{, }
+\renewcommand*{\Authand}{, }
+\renewcommand*{\Authands}{, }
+\renewcommand\Affilfont{\small}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Preferences for Market-Based Welfare: Disentangling the role of merit and privilege beliefs},
+  pdfauthor={Andreas Laffert; Juan Carlos Castillo; René Canales; Tomás Urzúa},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Preferences for Market-Based Welfare: Disentangling the role of
+merit and privilege beliefs}
+
+
+\author{Andreas Laffert, Juan Carlos Castillo, René Canales, Tomás
+Urzúa}
+\affil{Department of Sociology, University of Chile}
+
+\date{May 19, 2026}
+
+\usepackage{xcolor}
+\definecolor{mylinkcolor}{HTML}{0563C1}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = mylinkcolor,
+  citecolor  = mylinkcolor,
+  urlcolor   = mylinkcolor
+}
+\begin{document}
+\maketitle
+
+
+\setstretch{1.5}
+Word count: 451
+
+\textbf{Background and relevance}. The commodification of social welfare
+has reshaped not only how services are delivered but also the moral
+frameworks through which citizens evaluate who deserves what and why
+(\citeproc{ref-koos_moral_2019}{Koos \& Sachweh, 2019};
+\citeproc{ref-mau_inequality_2015}{Mau, 2015};
+\citeproc{ref-vanoorschot_social_2017}{Van Oorschot et al., 2017}).
+Comparative welfare state research has increasingly documented that
+marketization generates policy feedback effects on public attitudes,
+strengthening support for market-based allocation of core services such
+as health, education, and pensions; a phenomenon captured by the concept
+of market justice preferences
+(\citeproc{ref-busemeyer_welfare_2020}{Busemeyer \& Iversen, 2020};
+\citeproc{ref-castillo_justification_2026}{Castillo et al., 2026},
+\citeproc{ref-castillo_perceptions_2025}{2025};
+\citeproc{ref-immergut_it_2020}{Immergut \& Schneider, 2020};
+\citeproc{ref-lindh_public_2015}{Lindh, 2015};
+\citeproc{ref-svallfors_political_2007}{Svallfors, 2007};
+\citeproc{ref-zhu_policy_2015}{Zhu \& Lipsmeyer, 2015}). Within this
+moral economy framework (\citeproc{ref-svallfors_moral_2006}{Svallfors,
+2006}), criteria of deservingness play a central role in mediating the
+ways in which structural conditions shape welfare attitudes. Drawing on
+the NICER framework (\citeproc{ref-knotz_recast_2022}{Knotz et al.,
+2022}), this paper focuses on the effort dimension of deservingness,
+operationalized through meritocratic beliefs, as a key normative driver
+of preferences for market justice. Chile offers a paradigmatic case:
+decades of deep welfare commodification have institutionalized
+individual responsibility as the dominant principle in pensions,
+education, and health (\citeproc{ref-madariaga_three_2020}{Madariaga,
+2020}), making it an especially fertile context for examining how
+meritocracy legitimizes market-based access to welfare.
+
+\textbf{Research question and objective}. This study examines how
+multidimensional meritocratic beliefs, encompassing both meritocratic
+and non-meritocratic (privilege-based) perceptions and preferences,
+shape support for market-based welfare across three domains: health,
+education, and pensions. A key contribution is the explicit inclusion of
+non-meritocratic beliefs (i.e., perceptions and endorsements of
+privilege as a mechanism of social advancement), which the existing
+literature has largely sidelined.
+
+\textbf{Data and methods}. We analyze cross-sectional data from a survey
+of urban Chilean adults (\(N\) = 2,557). Market justice preferences are
+measured using items that assess the perceived fairness of income-based
+access to health, education, and pensions. Meritocratic beliefs are
+operationalized following a multidimensional approach
+(\citeproc{ref-castillo_multidimensional_2023}{Castillo et al., 2023}),
+distinguishing between meritocratic (effort and talent are rewarded) and
+non-meritocratic (privilege and connections drive success) perceptions
+and preferences. Structural equation modeling (SEM) is used to estimate
+the associations between these four belief dimensions and market justice
+preferences (\citeproc{ref-kline_principles_2023}{Kline, 2023}).
+
+\textbf{Findings and implications}. Results show that meritocratic
+perceptions are positively associated with market justice preferences,
+replicating prior findings
+(\citeproc{ref-castillo_justification_2026}{Castillo et al., 2026}).
+Non-meritocratic perceptions (perceiving privilege) are negatively
+associated, suggesting that awareness of unearned advantage undermines
+support for market allocation. Meritocratic preferences show no
+significant effect, possibly due to limited variance. Notably, the
+strongest effect is observed for non-meritocratic preferences:
+individuals who endorse privilege as a legitimate basis for social
+reward show significantly higher market-justice preferences, the largest
+effect in the model. These findings extend our understanding of how
+deservingness beliefs operate across welfare domains, and highlight that
+embracing non-meritocratic principles does not necessarily imply
+opposition to market-based welfare. Methodologically, the study advances
+the importance of disaggregating meritocratic beliefs into normative and
+descriptive dimensions in the study of welfare attitudes.
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-busemeyer_welfare_2020}
+Busemeyer, M., \& Iversen, T. (2020). The {Welfare State} with {Private
+Alternatives}: {The Transformation} of {Popular Support} for {Social
+Insurance}. \emph{The Journal of Politics}, \emph{82}(2), 671--686.
+\url{https://doi.org/10.1086/706980}
+
+\bibitem[\citeproctext]{ref-castillo_justification_2026}
+Castillo, J. C., Canales-Sellés, R., Laffert, A., \& Urzúa, T. (2026).
+Justification trajectories for pension inequality in {Chile}
+(2016--2023): The role of social class and beliefs in meritocracy.
+\emph{Frontiers in Sociology}, \emph{11}, 1771856.
+\url{https://doi.org/10.3389/fsoc.2026.1771856}
+
+\bibitem[\citeproctext]{ref-castillo_multidimensional_2023}
+Castillo, J. C., Iturra, J., Maldonado, L., Atria, J., \& Meneses, F.
+(2023). A {Multidimensional Approach} for {Measuring Meritocratic
+Beliefs}: {Advantages}, {Limitations} and {Alternatives} to the {ISSP
+Social Inequality Survey}. \emph{International Journal of Sociology},
+\emph{53}(6), 448--472.
+\url{https://doi.org/10.1080/00207659.2023.2274712}
+
+\bibitem[\citeproctext]{ref-castillo_perceptions_2025}
+Castillo, J. C., Laffert, A., Carrasco, K., \& Iturra-Sanhueza, J.
+(2025). Perceptions of inequality and meritocracy: Their interplay in
+shaping preferences for market justice in {Chile} (2016--2023).
+\emph{Frontiers in Sociology}, \emph{10}, 1634219.
+\url{https://doi.org/10.3389/fsoc.2025.1634219}
+
+\bibitem[\citeproctext]{ref-immergut_it_2020}
+Immergut, E. M., \& Schneider, S. M. (2020). Is it unfair for the
+affluent to be able to purchase {``better''} healthcare? {Existential}
+standards and institutional norms in healthcare attitudes across 28
+countries. \emph{Social Science \& Medicine}, \emph{267}, 113146.
+\url{https://doi.org/10.1016/j.socscimed.2020.113146}
+
+\bibitem[\citeproctext]{ref-kline_principles_2023}
+Kline, R. B. (2023). \emph{Principles and {Practice} of {Structural
+Equation Modeling}}. Guilford Publications.
+
+\bibitem[\citeproctext]{ref-knotz_recast_2022}
+Knotz, C. M., Gandenberger, M. K., Fossati, F., \& Bonoli, G. (2022). A
+{Recast Framework} for {Welfare Deservingness Perceptions}. \emph{Social
+Indicators Research}, \emph{159}(3), 927--943.
+\url{https://doi.org/10.1007/s11205-021-02774-9}
+
+\bibitem[\citeproctext]{ref-koos_moral_2019}
+Koos, S., \& Sachweh, P. (2019). The moral economies of market
+societies: Popular attitudes towards market competition, redistribution
+and reciprocity in comparative perspective. \emph{Socio-Economic
+Review}, \emph{17}(4), 793--821.
+\url{https://doi.org/10.1093/ser/mwx045}
+
+\bibitem[\citeproctext]{ref-lindh_public_2015}
+Lindh, A. (2015). Public {Opinion} against {Markets}? {Attitudes}
+towards {Market Distribution} of {Social Services} -- {A Comparison} of
+17 {Countries}. \emph{Social Policy \& Administration}, \emph{49}(7),
+887--910. \url{https://doi.org/10.1111/spol.12105}
+
+\bibitem[\citeproctext]{ref-madariaga_three_2020}
+Madariaga, A. (2020). The three pillars of neoliberalism: {Chile}'s
+economic policy trajectory in comparative perspective.
+\emph{Contemporary Politics}, \emph{26}(3), 308--329.
+\url{https://doi.org/10.1080/13569775.2020.1735021}
+
+\bibitem[\citeproctext]{ref-mau_inequality_2015}
+Mau, S. (2015). \emph{Inequality, {Marketization} and the {Majority
+Class}: {Why Did} the {European Middle Classes Accept Neo-Liberalism}?}
+London: Palgrave Macmillan UK.
+
+\bibitem[\citeproctext]{ref-svallfors_moral_2006}
+Svallfors, S. (2006). \emph{The moral economy of class}. Stanford
+University Press.
+
+\bibitem[\citeproctext]{ref-svallfors_political_2007}
+Svallfors, S. (Ed.). (2007). \emph{The {Political Sociology} of the
+{Welfare State}: {Institutions}, {Social Cleavages}, and {Orientations}}
+(1st ed.). Stanford University Press.
+\url{https://doi.org/10.2307/j.ctvr0qv0q}
+
+\bibitem[\citeproctext]{ref-vanoorschot_social_2017}
+Van Oorschot, W., Roosma, F., Meuleman, B., \& Reeskens, T. (Eds.).
+(2017). \emph{The {Social Legitimacy} of {Targeted Welfare}: {Attitudes}
+to {Welfare Deservingness}}. Edward Elgar Publishing.
+\url{https://doi.org/10.4337/9781785367212}
+
+\bibitem[\citeproctext]{ref-zhu_policy_2015}
+Zhu, L., \& Lipsmeyer, C. S. (2015). Policy feedback and economic risk:
+The influence of privatization on social policy preferences.
+\emph{Journal of European Public Policy}, \emph{22}(10), 1489--1511.
+\url{https://doi.org/10.1080/13501763.2015.1031159}
+
+\end{CSLReferences}
+
+
+
+
+\end{document}
