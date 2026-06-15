@@ -1,0 +1,38 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+# Results {background-color="#491106ff"}
+
+## Descriptive
+
+```{r}
+#| label: fig-likermerit
+#| fig-cap-location: bottom
+#| fig-cap: "Distribution of responses on the scale of perceptions and preferences regarding meritocracy"
+#| out-width: '90%'
+#| echo: false
+#| fig-asp: 0.6
+
+likerplot 
+```
+
+## Model
+
+```{r}
+#| label: fig-sem
+#| fig-align: center
+#| out-width: '100%'
+#| echo: false
+#| fig-asp: 0.6
+#| fig-cap-location: bottom
+#| fig-cap: "Structural equation model"
+
+
+knitr::include_graphics("images/sem_all.png")
+
+```

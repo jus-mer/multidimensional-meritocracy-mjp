@@ -1,0 +1,151 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Context and motivation {background-color="#491106ff"}
+
+## Marketized welfare and its moral underpinnings
+
+:::: {.incremental style="font-size: 120%;"}
+- Commodification reshaped *who deserves what, and why*
+- Policy feedback → rising **market justice preferences**: income-based access to health, education, pensions
+- Moral economy: deservingness criteria mediate how structure shapes attitudes
+- **Chile**: deep commodification; individual responsibility institutionalized across all three domains
+::::
+
+## Research problem
+
+:::: {.incremental style="font-size: 120%;"}
+- NICER framework → focus on the **effort** dimension of deservingness, operationalized as meritocratic beliefs
+- Most work uses a single, summative notion of "meritocracy"
+- This masks heterogeneity along **two crossed distinctions**:
+  - meritocratic vs. **non-meritocratic** (privilege) beliefs
+  - **perceptions** (what *is*) vs. **preferences** (what *ought to be*)
+- Largely sidelined: **non-meritocratic** beliefs — privilege as a route to success
+:::: 
+
+## Multidimensional framework of meritocracy
+
+::: {.fragment}
+
+```{r}
+#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-align: center
+#| out-width: '100%'
+#| fig-cap-location: bottom
+library(knitr)
+library(here)
+
+knitr::include_graphics("images/diagramas(4).png")
+
+```
+
+:::
+
+::: {.notes}
+
+To approach meritocracy, we use a multidimensional framework. This model expands the usual way meritocracy is measured in empirical research.
+
+:::
+## Multidimensional framework of meritocracy
+
+
+
+```{r}
+#| fig-cap-location: bottom
+#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-align: center
+#| out-width: '100%'
+
+
+knitr::include_graphics("images/diagramas(5).png")
+
+```
+
+::: {.notes}
+
+Most studies focus only on meritocratic perceptions, that is, whether people believe that effort and ability are actually rewarded in society. This is represented in the upper-left corner of the diagram. 
+
+ 
+
+:::
+
+## Multidimensional framework of meritocracy
+
+
+```{r}
+#| fig-cap-location: bottom
+#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-align: center
+#| out-width: '100%'
+
+
+knitr::include_graphics("images/diagramas(6).png")
+```
+
+::: {.notes}
+
+What this model adds is, first, a distinction between perceptions and preferences, where perceptions refer to how people think society works and preferences refer to how they think it should work. This is represented in the upper-right corner using the same items, but with a normative sense. 
+
+
+:::
+
+## Multidimensional framework of meritocracy
+
+
+```{r}
+#| fig-cap-location: bottom
+#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-align: center
+#| out-width: '100%'
+
+
+knitr::include_graphics("images/diagramas(7).png")
+```
+
+
+::: {.notes}
+
+Second, it also incorporates non-meritocratic elements, captured through items on family wealth and social connections, both of which are shown at the bottom of the diagram. We call this dimension non-meritocratic privilege.
+
+:::
+
+## Multidimensional framework of meritocracy
+
+
+```{r}
+#| fig-cap-location: bottom
+#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-align: center
+#| out-width: '100%'
+
+
+knitr::include_graphics("images/diagramas(8).png")
+```
+
+::: {.notes}
+So, in total, the scale distinguishes four dimensions: perceived meritocracy, perceived non-meritocracy, preference for meritocracy, and preference for non-meritocracy. This means that recognizing privilege does not oppose supporting merit. Both can coexist within the same belief system in terms of perceptions and preferences.
+
+
+Also, you can see the two items for each factor, all measured on a four-point agreement scale.
+
+:::
+
+
+## Research question & hypotheses
+
+:::: {.fragment style="font-size: 120%;"}
+
+**RQ:** How do meritocratic and privilege perceptions and preferences shape support for market-based welfare (health, education, pensions) in Chile?
+
+::::
+
+
+:::: {.incremental style="font-size: 120%;"}
+- **H1**: Meritocratic *perceptions* → (+) market justice
+- **H2**: Meritocratic *preferences* → (+) market justice
+- **H3**: Privilege *perceptions*  → (–) market justice
+- **H4**: Privilege *acceptance* → *open / exploratory*
+:::: 

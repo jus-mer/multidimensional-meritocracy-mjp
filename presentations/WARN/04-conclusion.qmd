@@ -1,0 +1,57 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+# Discussion and conclusion {background-color="#491106ff"}
+
+## Dialogue with the literature
+
+:::: {.incremental style="font-size: 120%;"}
+- Effects diverge sharply *within* "meritocracy" → vindicates the multidimensional approach
+- Counterintuitive core finding: embracing **privilege** ≠ rejecting markets — it is the *strongest* legitimizer
+- Speaks to:
+  - **Market justice / commodification** (Lindh; Busemeyer & Iversen)
+  - **NICER deservingness — effort criterion** (Knotz et al.): merit is heterogeneous; *is* ≠ *ought*
+  - Meritocracy as legitimation of market inequality
+:::: 
+
+## Methodological takeaways and implications
+
+:::: {.incremental style="font-size: 120%;"}
+- **Disaggregate** compound moral constructs: perception vs. preference; merit vs. privilege
+- SEM measures latent beliefs **cleanly** (error-free) and tests them **simultaneously**
+- A **transferable strategy**: other deservingness criteria (NICER), other domains, other countries
+- *Closing line:* measuring meritocracy as one thing hides effects that point in opposite directions
+:::: 
+
+
+# {background-color="#882b2b"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/qr-code-jusmer.png){width="50%" fig-align="center"}
+:::
+
+::: {.column .column-right width="50%"}
+
+<br>
+
+### Thanks you for your attention! {style="font-size:3em; text-align:right; line-height:1.1; color:white;"}
+
+<br>
+
+
+<p style="color: white; font-size: 1.5em; text-align: right;">Comments most welcome  🫡</p> 
+
+
+:::
+
+::::
+
+
+

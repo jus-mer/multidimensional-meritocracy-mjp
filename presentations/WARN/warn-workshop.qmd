@@ -1,0 +1,112 @@
+---
+bibliography: "../../input/bib/jusmer.bib"
+csl: "../../input/bib/apa6.csl"
+lang: en
+knitr:
+  opts_chunk:
+    collapse: true
+    comment: "#>"
+    R.options:
+      
+      knitr.graphics.auto_pdf: true
+format:
+  revealjs:
+    #logo: images/edumer.png
+    slide-number: true
+    theme: "libs/edumer.scss"
+    auto-stretch: false
+    title-slide-attributes:
+      visibility: false
+    transition: fade
+    transition-speed: slow
+# data-background-image: images/cover.jpg
+# data-background-size: cover
+    auto-play-media: true
+    mathjax: "default"
+editor_options: 
+  chunk_output_type: console
+freeze: auto
+execute:
+  cache: true
+---
+
+```{r}
+#| include: false
+library(knitr)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      error = F, 
+                      message = F) 
+```
+
+```{r}
+#| include: false
+
+if (! require("pacman")) install.packages("pacman")
+
+pacman::p_load(tidyverse, 
+               here,
+               kableExtra)
+
+options(scipen=999)
+rm(list = ls())
+```
+
+
+```{r}
+#| echo: false
+#| include: false
+library(here)
+source(file = here("processing/prod_analysis_sem.R"))
+```
+
+::: columns
+
+
+::: {.column width="20%"}
+
+![](images/jusmer-logo-vert.png){width='75%'}
+
+![](images/qr.png){width='80%'}
+
+:::
+
+::: {.column .column-right width="80%"}
+
+
+
+# Preferences for Market-Based Welfare: Disentangling the role of merit and privilege beliefs in Chile {style="font-size:21px; text-align:right; line-height:1.1;"}
+
+------------------------------------------------------------------------
+
+</br>
+**Andreas Laffert, Juan Carlos Castillo, René Canales & </br> Tomás Urzúa**
+
+::: {.blue2 .medium style="line-height:0.4; margin-top:0; margin-bottom:0;"}
+
+**Department of Sociology, University of Chile** </br>
+
+:::
+
+</br>
+
+### WARN Online Workshop: Methods in Welfare Attitudes Research - June 2026 {style="color:black"}
+
+:::
+:::
+
+{{< include 01-introduction.qmd >}}
+
+{{< include 02-methods.qmd >}}
+
+{{< include 03-results.qmd >}}
+
+{{< include 04-conclusion.qmd >}}
+
+
+# References
+
+::: {#refs}
+:::
+
+{{< include 05-sm.qmd >}}

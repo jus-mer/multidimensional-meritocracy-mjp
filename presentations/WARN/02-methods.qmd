@@ -1,0 +1,80 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Methodology {background-color="#491106ff"}
+
+## Data
+
+:::: {.incremental style="font-size: 120%;"}
+
+- EDUMERCO: Online survey (CAWI), fielded in 2025, with adult respondents from the Metropolitan Region of Chile  
+
+- Non-probability sample with quota-based design  
+    → approximating population parameters by age, gender, education, and socioeconomic status  
+
+- Total sample: N = 3,470  
+
+- Analytical sample: **N = 2,521** 
+
+:::: 
+
+::: {.notes}
+
+For this analysis, we use data from an online CAWI survey conducted in two thousand twenty-five among adolts in the Metropolitan Region of Chile. The resulting analytical sample consisted of two thousand five hundred and fifty-seven individuals.
+
+
+:::
+
+## Measures
+
+:::: {.incremental style="font-size: 110%;"}
+
+**Dependent variable — Market justice preferences**
+
+- Justifying income-based access to three core services: **healthcare, pensions, and education**
+- e.g. *"Is it fair that people with higher incomes access better healthcare than those with lower incomes?"* 
+- 5-point Likert (1 = strongly disagree to 5 = strongly agree)
+- Three items → one latent factor
+
+**Meritocratic beliefs (4 latent dimensions)**
+
+- Same items as the original scale of @castillo_multidimensional_2023 
+- 4-point Likert items
+
+**Controls**
+
+- Sex (man / woman) · age · education (years) · income quintile · political identification (left / center / right / none)
+
+::::
+
+## Analytical strategy
+
+:::: {.incremental style="font-size: 120%;"}
+
+- First, we estimate a Confirmatory Factor Analysis of the multidimensional meritocracy scale  
+  → good model fit (CFI = 0.995, TLI = 0.991, RMSEA = 0.048)
+
+- Second, we estimate a Structural Equation Model  
+  → latent market justice regressed on latent meritocracy factors
+
+::: {.fragment}
+$$
+\text{MJP}_{i} = \alpha + \beta_1 \eta^{PM}_{i} + \beta_2 \eta^{PNM}_{i} + \beta_3 \eta^{PrM}_{i} + \beta_4 \eta^{PrNM}_{i} + \gamma'X_i + \varepsilon_i
+$$
+:::
+
+- Estimation: WLSMV  
+  → appropriate for ordinal (Likert-type) data [@kline_principles_2023]
+
+:::: 
+
+::: {.notes}
+
+Methodologically, we prəˈsēd in two steps. First, we estimate a confirmatory factor analysis of the multidimensional scale, which showed a good fit to the data. This adds evidence in line with the leitent structure of the scale. 
+
+Second, we estimate a structural equation model in which pension market justice is regressed on the leitent meritocracy factors. This allauwas to model the covariance among the items, recover the underlying dimensions of meritocratic beliefs, and estimate how each of them relates to support for market justice. Formally, the outcome is modeled as a function of the scale's four leitent dimensions, along with the same controls as in the main paper. 
+
+:::
