@@ -2,6 +2,8 @@
 output: html_document
 editor_options: 
   chunk_output_type: console
+bibliography: "../../input/bib/jusmer.bib"
+csl: "../../input/bib/apa6.csl"
 ---
 
 
@@ -14,8 +16,8 @@ editor_options:
 - Effects diverge sharply *within* "meritocracy" → vindicates the multidimensional approach
 - Counterintuitive core finding: embracing **privilege** ≠ rejecting markets — it is the *strongest* legitimizer
 - Speaks to:
-  - **Market justice / commodification** (Lindh; Busemeyer & Iversen)
-  - **NICER deservingness — effort criterion** (Knotz et al.): merit is heterogeneous; *is* ≠ *ought*
+  - **Market justice / commodification** [@lindh_public_2015; @busemeyer_oeffentliche_2019]
+  - **NICER deservingness — effort criterion** [@knotz_recast_2022]: merit is heterogeneous; *is* ≠ *ought*
   - Meritocracy as legitimation of market inequality
 :::: 
 

@@ -2,6 +2,8 @@
 output: html_document
 editor_options: 
   chunk_output_type: console
+bibliography: "../../input/bib/jusmer.bib"
+csl: "../../input/bib/apa6.csl"
 ---
 
 # Context and motivation {background-color="#491106ff"}
@@ -9,21 +11,21 @@ editor_options:
 ## Marketized welfare and its moral underpinnings
 
 :::: {.incremental style="font-size: 120%;"}
-- Commodification reshaped *who deserves what, and why*
-- Policy feedback → rising **market justice preferences**: income-based access to health, education, pensions
-- Moral economy: deservingness criteria mediate how structure shapes attitudes
-- **Chile**: deep commodification; individual responsibility institutionalized across all three domains
+- Commodification reshaped *who deserves what, and why* [@streeck_how_2016; @gingrich_making_2011; @oorschot_who_2000]
+- Policy feedback → rising **market justice preferences**: income-based access to health, education, pensions [@beland_varieties_2019; @lindh_public_2015]
+- Moral economy: deservingness criteria mediate how structure shapes attitudes [@campbell_institutional_2020; @fernandez_positive_2013; @mau_inequality_2015]
+- **Chile**: deep commodification; individual responsibility institutionalized across all three domains [@castillo_justification_2025; @castillo_justification_2026; @boccardo_30_2020; @madariaga_three_2020]
 ::::
 
 ## Research problem
 
 :::: {.incremental style="font-size: 120%;"}
-- NICER framework → focus on the **effort** dimension of deservingness, operationalized as meritocratic beliefs
+- NICER framework → focus on the **effort** dimension of deservingness, operationalized as meritocratic beliefs [@knotz_recast_2022]
 - Most work uses a single, summative notion of "meritocracy"
 - This masks heterogeneity along **two crossed distinctions**:
   - meritocratic vs. **non-meritocratic** (privilege) beliefs
   - **perceptions** (what *is*) vs. **preferences** (what *ought to be*)
-- Largely sidelined: **non-meritocratic** beliefs — privilege as a route to success
+- Largely sidelined: **non-meritocratic** beliefs — privilege as a route to success [@laffert_stability_2026]
 :::: 
 
 ## Multidimensional framework of meritocracy
@@ -46,7 +48,7 @@ knitr::include_graphics("images/diagramas(4).png")
 
 ::: {.notes}
 
-To approach meritocracy, we use a multidimensional framework. This model expands the usual way meritocracy is measured in empirical research.
+To approach meritocracy, we use a multidimensional framework. This model expands the usual way meritocracy is measured in empirical research [@castillo_multidimensional_2023].
 
 :::
 ## Multidimensional framework of meritocracy
