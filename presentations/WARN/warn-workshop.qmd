@@ -64,6 +64,7 @@ source(file = here("processing/prod_analysis_sem.R"))
 
 
 ::: {.column width="20%"}
+</br>
 
 ![](images/jusmer-logo-vert.png){width='75%'}
 
@@ -73,7 +74,7 @@ source(file = here("processing/prod_analysis_sem.R"))
 
 ::: {.column .column-right width="80%"}
 
-
+</br>
 
 # Preferences for Market-Based Welfare: Disentangling the role of merit and privilege beliefs in Chile {style="font-size:21px; text-align:right; line-height:1.1;"}
 

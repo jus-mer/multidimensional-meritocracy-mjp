@@ -6,28 +6,30 @@ bibliography: "../../input/bib/jusmer.bib"
 csl: "../../input/bib/apa6.csl"
 ---
 
-
-
 # Discussion and conclusion {background-color="#491106ff"}
 
 ## Dialogue with the literature
 
 :::: {.incremental style="font-size: 120%;"}
-- Effects diverge sharply *within* "meritocracy" → vindicates the multidimensional approach
-- Counterintuitive core finding: embracing **privilege** ≠ rejecting markets — it is the *strongest* legitimizer
-- Speaks to:
-  - **Market justice / commodification** [@lindh_public_2015; @busemeyer_oeffentliche_2019]
-  - **NICER deservingness — effort criterion** [@knotz_recast_2022]: merit is heterogeneous; *is* ≠ *ought*
-  - Meritocracy as legitimation of market inequality
+
+- Robust replication: higher meritocratic perceptions raise MJP [@castillo_perceptions_2025]
+- Perceiving privilege lowers MJP; endorsing it raises it the most
+- Embracing privilege means justifying more inequality and market welfare
+- Speaks to welfare attitudes: brings market justice in, and meritocracy as legitimizer of inequality [@lindh_class_2020; @lindh_bringing_2023; @mau_inequality_2015; @castillo_perceptions_2025]
+
 :::: 
+
+
 
 ## Methodological takeaways and implications
 
 :::: {.incremental style="font-size: 120%;"}
-- **Disaggregate** compound moral constructs: perception vs. preference; merit vs. privilege
-- SEM measures latent beliefs **cleanly** (error-free) and tests them **simultaneously**
-- A **transferable strategy**: other deservingness criteria (NICER), other domains, other countries
-- *Closing line:* measuring meritocracy as one thing hides effects that point in opposite directions
+
+- Broad measurement of meritocratic beliefs reveals distinct paths: perceptions vs preferences, merit vs privilege
+- SEM tools (measurement error and latent paths) are a useful way to model them
+- Transferable to other beliefs, criteria and domains shaping welfare attitudes
+- Limits: cross-sectional and one country; next: conjoint experiments and cross-country analysis
+
 :::: 
 
 

@@ -8,25 +8,53 @@ csl: "../../input/bib/apa6.csl"
 
 # Context and motivation {background-color="#491106ff"}
 
-## Marketized welfare and its moral underpinnings
+## Background
+
+::: {.box-inv-4 .sp-after .fragment style="font-size: 110%;"}
+
+1) Privatization and marketization of public goods, welfare policies, and social services [@gingrich_making_2011; @streeck_how_2016]
+
+:::
+
+::: {.box-inv-4 .sp-after .fragment style="font-size: 110%;"}
+
+2) Changes in the institutional architecture of the welfare state; expansion of market logics [@ferre_welfare_2023; @busemeyer_welfare_2020]
+
+:::
+
+::: {.box-inv-4 .sp-after .fragment style="font-size: 110%;"}
+
+3) This economic order is reflected in a specific moral economy and policy feedback dynamics [@mau_inequality_2015; @campbell_institutional_2020; @fernandez_positive_2013]
+
+:::
+
+::: {.box-inv-5 .sp-after-half .fragment style="font-size: 110%;"}
+
+Market justice preferences [@busemeyer_skills_2015; @castillo_perceptions_2025; @koos_moral_2019; @lindh_public_2015]
+
+:::
+
+
+::: {.notes}
+Estados de bienestar que han expandido las lógicas de mercado vía privatización y mercantilización de bienes públicos, políticas y servicios sociales. Esto tiene consecuencias distributivas y también morales. Ese orden económico se refleja en una economía moral específica y en dinámicas de policy feedback: las instituciones incrustan criterios de mercado de asignación "justa" y reconfiguran el merecimiento y el balance Estado–mercado. En ese contexto crecen las market justice preferences: en qué medida la ciudadanía ve los criterios de mercado como base justa para asignar servicios esenciales —salud, educación, pensiones.
+:::
+
+
+## The problem
+
 
 :::: {.incremental style="font-size: 120%;"}
-- Commodification reshaped *who deserves what, and why* [@streeck_how_2016; @gingrich_making_2011; @oorschot_who_2000]
-- Policy feedback → rising **market justice preferences**: income-based access to health, education, pensions [@beland_varieties_2019; @lindh_public_2015]
-- Moral economy: deservingness criteria mediate how structure shapes attitudes [@campbell_institutional_2020; @fernandez_positive_2013; @mau_inequality_2015]
-- **Chile**: deep commodification; individual responsibility institutionalized across all three domains [@castillo_justification_2025; @castillo_justification_2026; @boccardo_30_2020; @madariaga_three_2020]
+
+- Deservingness back on top: *who should get what, and why?* —>  contributive / ability-to-pay welfare logic [@vanoorschot_social_2017]
+
+- A key explanatory variable of this puzzle is meritocratic beliefs:
+
+  → Stronger meritocratic perceptions lead to more MJP across pensions, education, and healthcare in Chile [@castillo_perceptions_2025; @castillo_justification_2026]
+
+- **Aim**: examine in depth how the distinct dimensions of meritocracy drive more or less support for market-based welfare 
+
 ::::
 
-## Research problem
-
-:::: {.incremental style="font-size: 120%;"}
-- NICER framework → focus on the **effort** dimension of deservingness, operationalized as meritocratic beliefs [@knotz_recast_2022]
-- Most work uses a single, summative notion of "meritocracy"
-- This masks heterogeneity along **two crossed distinctions**:
-  - meritocratic vs. **non-meritocratic** (privilege) beliefs
-  - **perceptions** (what *is*) vs. **preferences** (what *ought to be*)
-- Largely sidelined: **non-meritocratic** beliefs — privilege as a route to success [@laffert_stability_2026]
-:::: 
 
 ## Multidimensional framework of meritocracy
 
@@ -138,16 +166,28 @@ Also, you can see the two items for each factor, all measured on a four-point ag
 
 ## Research question & hypotheses
 
-:::: {.fragment style="font-size: 120%;"}
+:::: {.fragment style="font-size: 110%;"}
 
 **RQ:** How do meritocratic and privilege perceptions and preferences shape support for market-based welfare (health, education, pensions) in Chile?
 
 ::::
 
 
-:::: {.incremental style="font-size: 120%;"}
-- **H1**: Meritocratic *perceptions* → (+) market justice
-- **H2**: Meritocratic *preferences* → (+) market justice
-- **H3**: Privilege *perceptions*  → (–) market justice
-- **H4**: Privilege *acceptance* → *open / exploratory*
+:::: {.fragment}
+
+
+```{r}
+#| label: fig-hipo
+#| fig-align: center
+#| out-width: '100%'
+#| echo: false
+#| fig-asp: 0.6
+#| fig-cap-location: bottom
+#| fig-cap: "Hypothesis"
+
+
+knitr::include_graphics("images/hipo.png")
+
+```
+
 :::: 
