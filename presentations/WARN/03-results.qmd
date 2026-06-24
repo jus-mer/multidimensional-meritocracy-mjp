@@ -8,19 +8,6 @@ editor_options:
 
 # Results {background-color="#491106ff"}
 
-## Descriptive
-
-```{r}
-#| label: fig-likermerit
-#| fig-cap-location: bottom
-#| fig-cap: "Distribution of responses on the scale of perceptions and preferences regarding meritocracy"
-#| out-width: '90%'
-#| echo: false
-#| fig-asp: 0.6
-
-likerplot 
-```
-
 ## CFA
 
 ```{r}
