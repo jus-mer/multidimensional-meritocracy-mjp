@@ -36,25 +36,39 @@ Market justice preferences [@busemeyer_skills_2015; @castillo_perceptions_2025; 
 
 
 ::: {.notes}
-Estados de bienestar que han expandido las lógicas de mercado vía privatización y mercantilización de bienes públicos, políticas y servicios sociales. Esto tiene consecuencias distributivas y también morales. Ese orden económico se refleja en una economía moral específica y en dinámicas de policy feedback: las instituciones incrustan criterios de mercado de asignación "justa" y reconfiguran el merecimiento y el balance Estado–mercado. En ese contexto crecen las market justice preferences: en qué medida la ciudadanía ve los criterios de mercado como base justa para asignar servicios esenciales —salud, educación, pensiones.
+Since the 1980s, many welfare states have rolled back universal provision and moved toward privatization and commodification of public goods and social services. 
+
+These reforms expanded the role of private actors and pushed market logic into domains previously governed by the state, such as health, education, pensions, and care. 
+
+This not only reassigns risk from the collective to the individual but also reshapes the moral basis of what counts as fair in welfare access, in line with policy feedback literature. Public opinion literature has usually focused on redistributive preferences to study the link between institutional contexts and citizens' beliefs about the state's role in providing public goods. 
+
+More recently, some studies have examined support for the provision of public services based on individual payment capacity, under the label of market-justice preferences. In this study, we focus on market justice preferences and their relationships with meritocracy beliefs.
 :::
 
 
-## The problem
+## Research question and argument {background-color="#491106ff"}
+
+::: {.fragment style="font-size: 130%;"}
+
+**RQ**: _How do perceptions and preferences of meritocracy and privilege shape support for market-based welfare in Chile?_
 
 
-:::: {.incremental style="font-size: 120%;"}
+:::
 
-- Deservingness back on top: *who should get what, and why?* —>  contributive / ability-to-pay welfare logic [@vanoorschot_social_2017]
+::: {.fragment style="font-size: 130%;"}
 
-- A key explanatory variable of this puzzle is meritocratic beliefs:
+**Argument**: Commodification shifts welfare access from a distributive to a contributory logic, and meritocratic beliefs capture that shift, driving market justice preferences [@castillo_perceptions_2025; @castillo_justification_2026]. We examine their multiple faces.
 
-  → Stronger meritocratic perceptions lead to more MJP across pensions, education, and healthcare in Chile [@castillo_perceptions_2025; @castillo_justification_2026]
+:::
 
-- **Aim**: examine in depth how the distinct dimensions of meritocracy drive more or less support for market-based welfare 
 
-::::
+::: {.notes}
+So our research question is: how do perceptions and preferences regarding meritocracy and privilege shape support for market-based welfare in Chile?
 
+The argument runs as follows. Commodification moves the logic of welfare access from a distributive principle to a contributory one, based on ability to pay. Meritocratic beliefs matter precisely because they capture that shift, which makes them a key driver of market justice preferences. With this team, we've shown consistently in Chile that perceiving society as rewarding effort and ability goes hand in hand with support for market-based welfare. Here we push further: a multidimensional lens on how the different faces of meritocracy shape these preferences.
+
+
+:::
 
 ## Multidimensional framework of meritocracy
 
@@ -76,9 +90,10 @@ knitr::include_graphics("images/diagramas(4).png")
 
 ::: {.notes}
 
-To approach meritocracy, we use a multidimensional framework. This model expands the usual way meritocracy is measured in empirical research [@castillo_multidimensional_2023].
+To capture these different faces of meritocracy, we use a multidimensional framework that expands the usual way meritocracy is measured in empirical research.
 
 :::
+
 ## Multidimensional framework of meritocracy
 
 
@@ -97,8 +112,6 @@ knitr::include_graphics("images/diagramas(5).png")
 ::: {.notes}
 
 Most studies focus only on meritocratic perceptions, that is, whether people believe that effort and ability are actually rewarded in society. This is represented in the upper-left corner of the diagram. 
-
- 
 
 :::
 
@@ -119,7 +132,6 @@ knitr::include_graphics("images/diagramas(6).png")
 
 What this model adds is, first, a distinction between perceptions and preferences, where perceptions refer to how people think society works and preferences refer to how they think it should work. This is represented in the upper-right corner using the same items, but with a normative sense. 
 
-
 :::
 
 ## Multidimensional framework of meritocracy
@@ -138,7 +150,7 @@ knitr::include_graphics("images/diagramas(7).png")
 
 ::: {.notes}
 
-Second, it also incorporates non-meritocratic elements, captured through items on family wealth and social connections, both of which are shown at the bottom of the diagram. We call this dimension non-meritocratic privilege.
+Second, it also incorporates non-meritocratic elements, captured through items on family wealth and social connections, both of which are shown at the bottom of the diagram. We call this dimension privilege.
 
 :::
 
@@ -156,22 +168,14 @@ knitr::include_graphics("images/diagramas(8).png")
 ```
 
 ::: {.notes}
-So, in total, the scale distinguishes four dimensions: perceived meritocracy, perceived non-meritocracy, preference for meritocracy, and preference for non-meritocracy. This means that recognizing privilege does not oppose supporting merit. Both can coexist within the same belief system in terms of perceptions and preferences.
-
+So, in total, the scale distinguishes four dimensions: perceived meritocracy, perceived privilege, preference for meritocracy, and acceptance of privilege. This means that recognizing privilege is not incompatible with supporting merit. Both can coexist within the same belief system regarding perceptions and preferences.
 
 Also, you can see the two items for each factor, all measured on a four-point agreement scale.
 
 :::
 
 
-## Research question & hypotheses
-
-:::: {.fragment style="font-size: 110%;"}
-
-**RQ:** How do meritocratic and privilege perceptions and preferences shape support for market-based welfare (health, education, pensions) in Chile?
-
-::::
-
+## Hypotheses
 
 :::: {.fragment}
 
@@ -191,3 +195,11 @@ knitr::include_graphics("images/hipo.png")
 ```
 
 :::: 
+
+::: {.notes}
+
+This leads to four hypotheses. 
+
+We hypothesize that higher meritocratic perception relates positively to market justice; higher meritocratic preference, also positively; and higher privilege perception, negatively. The fourth — acceptance of privilege — we treat as exploratory, with no precedent in the field.
+
+:::

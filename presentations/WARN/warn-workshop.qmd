@@ -93,7 +93,15 @@ source(file = here("processing/prod_analysis_sem.R"))
 
 ### WARN Online Workshop: Methods in Welfare Attitudes Research - June 2026 {style="color:black"}
 
+
+
 :::
+
+
+:::
+
+::: {.notes}
+Good afternoon, everyone. My name is Andreas Laffert, I'm a sociologist from Chile, and today I'll present a work we have been developing with Juan Carlos Castillo, René Canales, and Tomás Urzúa, titled "Preferences for market-based welfare: disentangling the role of merit and privilege beliefs in Chile." We are very pleased to present our work at this conference and look forward to your comments and feedback.
 :::
 
 {{< include 01-introduction.qmd >}}
@@ -103,6 +111,8 @@ source(file = here("processing/prod_analysis_sem.R"))
 {{< include 03-results.qmd >}}
 
 {{< include 04-conclusion.qmd >}}
+
+
 
 
 # References

@@ -23,6 +23,5 @@ editor_options:
 
 For this analysis, we use data from an online CAWI survey conducted in two thousand twenty-five among adolts in the Metropolitan Region of Chile. The resulting analytical sample consisted of two thousand five hundred and fifty-seven individuals.
 
-
 :::
 
