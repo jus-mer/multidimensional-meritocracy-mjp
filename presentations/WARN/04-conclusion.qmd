@@ -22,13 +22,16 @@ csl: "../../input/bib/apa6.csl"
 
 ::: {.notes}
 
-To close, a few points.  It's not enough to talk about meritocracy in general. Its dimensions matter, and they don't work the same way. Perceiving merit and accepting privilege raise support for market-based welfare, while perceiving privilege lowers it. 
+To conclude, I want to make a few points.  
 
-We see this as a relevant contribution to welfare attitudes research on two fronts. It brings the market back in as an arena of distributive justice, and it positions meritocracy as an inequality belief that shapes these attitudes — and shapes them differently when we measure it multidimensionally. 
+First, it's not enough to talk about meritocracy in general. Its dimensions matter, and they don't work the same way. Perceiving merit and accepting privilege raise support for market-based welfare, while perceiving privilege lowers it. 
 
-Beyond the substance, we believe the analytical strategy — using SEM to disentangle these dimensions — is a useful and transferable tool for other beliefs, criteria, and domains related to welfare. 
+Second, we see this as a relevant contribution to welfare attitudes research on two fronts. It brings the market back in as an arena of distributive justice, and it positions meritocracy as an inequality belief that shapes these attitudes — and shapes them differently when we measure it multidimensionally. 
 
-Of course, this work has limitations: it is cross-sectional and restricted to a single country, but we're now building survey experiments to decompose these paths causally and cross-country comparisons. Thank you.
+Third, beyond the substance, we believe the analytical strategy — using SEM to disentangle these dimensions — is a useful and transferable tool for other beliefs, criteria, and domains related to welfare. 
+
+Finally, of course, this work has limitations: it is cross-sectional and restricted to a single country, but we're now building survey experiments to decompose these paths causally and cross-country comparisons. Thank you.
+
 
 :::
 

@@ -26,7 +26,11 @@ knitr::include_graphics("images/cfa.png")
 
 ::: {.notes}
 
-Now to the results. Methodologically, we proceed in two steps. First, we estimate a confirmatory factor analysis of the multidimensional scale, which shows a good fit to the data, as reflected in the fit indices, high factor loadings, and the relations among dimensions. This provides evidence for the scale's latent structure.
+Now to the analysis. We proceed in two steps.
+
+First, we estimate a confirmatory factor analysis of the multidimensional scale, which shows a good fit to the data, as reflected in the fit indices, the high factor loadings, and the significant relations among dimensions. This provides evidence for the scale's latent structure.
+
+Second, we estimate a structural equation model, regressing market justice on the latent meritocracy factors. This is where the multidimensional approach shows its value: by modeling each dimension as a latent factor, the model separates true variance from measurement error and estimates the four structural paths to market justice simultaneously, recovering associations that a summative index would attenuate or obscure. Market justice itself is modeled as a latent factor from three items on fair income-based access to education, health, and pensions.
 
 :::
 
@@ -48,7 +52,17 @@ knitr::include_graphics("images/sem.png")
 ```
 
 ::: {.notes}
-Second, we estimate a structural equation model regressing market justice on the latent meritocracy factors. This is what makes the multidimensional approach pay off: by estimating the four belief dimensions as distinct latent factors within a single model, SEM isolates the independent association of each with market justice — associations that a single summative index would average out and hide. Market justice itself is modeled as a latent of three items on fair income-based access to education, health, and pensions
 
-The picture is interesting. Consistent with prior work, perceiving society as meritocratic is associated with greater support — an important replication of previous results. But once we model meritocracy multidimensionally, new findings appear. We find no effect of preference for meritocracy, probably because it varies little. Perceiving privilege relates to lower support: seeing society as shaped by privilege may raise awareness of inequality. And the most striking result: accepting privilege is associated with higher support, the largest effect in the model. A new finding we look forward to discussing.
+Now to the results. 
+
+Perceiving society as meritocratic is associated with greater support for market justice. This is consistent with previous work and an important replication.
+
+But once we treat meritocratic beliefs as multidimensional, new findings appear.
+
+We haven’t found an effect of preferences for meritocracy, perhaps because this factor varies little, as most people normatively support meritocratic principles.
+
+Perceiving privilege relates to lower support. A possible interpretation is that seeing society as driven by privilege rather than merit may heighten awareness of inequality and weaken its justification.
+
+Finally, the most striking result, in our view, is that accepting privilege relates to higher support for market justice, the largest effect in the model. Those who see privilege as a legitimate basis for getting ahead are also the most willing to accept that income should buy better welfare. It is a novel finding, and one we look forward to discussing.
+
 :::
