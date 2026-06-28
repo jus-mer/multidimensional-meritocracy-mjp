@@ -14,7 +14,7 @@ csl: "../../input/bib/apa6.csl"
 
 - Findings: meritocratic perceptions and endorsing privilege raise MJP; perceiving privilege lowers it [@castillo_perceptions_2025]
 - Broad measurement of meritocratic beliefs reveals distinct paths: perception vs preference, merit vs privilege
-- SEM (measurement error, latent paths) is a useful, transferable tool for other beliefs, criteria and domains [@hulle_measuring_2018; @meuleman_welfare_2020]
+- SEM (measurement error, latent paths) is a useful, transferable tool for other beliefs, criteria and domains [@meuleman_welfare_2020]
 - Limits: cross-sectional, one country; next: conjoint experiments and cross-country analysis
 
 ::::
@@ -24,7 +24,7 @@ csl: "../../input/bib/apa6.csl"
 
 To conclude, I want to make a few points.  
 
-First, it's not enough to talk about meritocracy in general. Its dimensions matter, and they don't work the same way. Perceiving merit and accepting privilege raise support for market-based welfare, while perceiving privilege lowers it. 
+First, it's not enough to talk about meritocracy in general. Its dimensions matter, and they don't work in the same way. Perceiving merit and accepting privilege raise support for market-based welfare, while perceiving privilege lowers it. 
 
 Second, we see this as a relevant contribution to welfare attitudes research on two fronts. It brings the market back in as an arena of distributive justice, and it positions meritocracy as an inequality belief that shapes these attitudes — and shapes them differently when we measure it multidimensionally. 
 
