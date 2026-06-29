@@ -40,11 +40,12 @@ So, let me start with a little context.
 
 Since the 1980s, many welfare states have experienced a rollback of universal welfare provision and moved toward the privatization and commodification of several public goods and social services. 
 
-These reforms expanded the role of private actors and pushed market logic into domains previously governed by the state, such as health, education, pensions, and care.
+These reforms expanded the role of private actors and pushed market logic into domains previously governed by the state, such as healthcare, education, and pensions.
 
-This transformation has gradually shifted risk from the collective to the individual. And as the policy feedback literature argues, these market-based institutions do not just deliver services; they also feed back into public attitudes about what constitutes a fair basis for allocation.
+This transformation has gradually shifted risk from the collective to the individual. And as the policy feedback literature argues, these market-based institutions do not just deliver services; they also feed back into public attitudes about what kón-sti-tyuts a fair basis for allocation.
 
-Public opinion research has long examined this link through the lens of redistributive preferences. More recently, it has begun asking how far citizens consider it fair for access to welfare to depend on market criteria, such as the ability to pay. That is what we call market-justice preferences, and here we study their relationship with meritocratic beliefs.
+PAblic opinion research has long ig-ZÁM-ind this link through the lens of redistributive preferences. More recently, it has begun asking how far citizens consider it fair for access to welfare to depend on market criteria, such as the ability to pay. That is what we call market-justice preferences, and here we study their relationship with meritocratic beliefs.
+
 
 :::
 
@@ -69,6 +70,7 @@ Public opinion research has long examined this link through the lens of redistri
 So our research question is: how do perceptions and preferences of meritocracy and privilege shape support for market-based welfare in Chile?
 
 Our argument runs as follows. The moral basis reshaped by commodification is, concretely, the deservingness principles by which citizens judge who deserves what and why. As access shifts to a contributory logic, based on ability to pay, merit becomes the criterion that logic foregrounds. That is why meritocratic beliefs are a key driver of market justice preferences. With this team, we've shown consistently in Chile that perceiving society as rewarding effort goes hand in hand with support for market-based welfare. Here we push further: a multidimensional lens on the different faces of meritocracy.
+
 :::
 
 ## Multidimensional framework of meritocracy
@@ -76,7 +78,7 @@ Our argument runs as follows. The moral basis reshaped by commodification is, co
 ::: {.fragment}
 
 ```{r}
-#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-cap: "Castillo et al. (2023) conceptual model"
 #| fig-align: center
 #| out-width: '100%'
 #| fig-cap-location: bottom
@@ -101,7 +103,7 @@ To capture these different faces of meritocracy, we use a multidimensional frame
 
 ```{r}
 #| fig-cap-location: bottom
-#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-cap: "Castillo et al. (2023) conceptual model"
 #| fig-align: center
 #| out-width: '100%'
 
@@ -121,7 +123,7 @@ Most studies focus only on meritocratic perceptions, that is, whether people bel
 
 ```{r}
 #| fig-cap-location: bottom
-#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-cap: "Castillo et al. (2023) conceptual model"
 #| fig-align: center
 #| out-width: '100%'
 
@@ -140,7 +142,7 @@ What this model adds is, first, a distinction between perceptions and preference
 
 ```{r}
 #| fig-cap-location: bottom
-#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-cap: "Castillo et al. (2023) conceptual model"
 #| fig-align: center
 #| out-width: '100%'
 
@@ -160,7 +162,7 @@ Second, it also incorporates non-meritocratic elements, captured through items o
 
 ```{r}
 #| fig-cap-location: bottom
-#| fig-cap: "Castillo et al. (2023) measurement model"
+#| fig-cap: "Castillo et al. (2023) conceptual model"
 #| fig-align: center
 #| out-width: '100%'
 
@@ -169,7 +171,7 @@ knitr::include_graphics("images/diagramas(8).png")
 ```
 
 ::: {.notes}
-So, in total, the scale distinguishes four dimensions: perceived meritocracy, perceived privilege, preference for meritocracy, and acceptance of privilege. This means that recognizing privilege is not incompatible with supporting merit. Both can coexist within the same belief system regarding perceptions and preferences.
+So, in total, the scale distinguishes four dimensions: perceived meritocracy, perceived privilege, preference for meritocracy, and acceptance of privilege. This means that recognizing privilege is not incompatible with supporting merit. Both can coexist within the same belief system.
 
 Also, you can see the two items for each factor, all measured on a four-point agreement scale.
 

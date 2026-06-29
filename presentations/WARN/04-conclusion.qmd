@@ -12,25 +12,25 @@ csl: "../../input/bib/apa6.csl"
 
 :::: {.incremental style="font-size: 120%;"}
 
-- Findings: meritocratic perceptions and endorsing privilege raise MJP; perceiving privilege lowers it [@castillo_perceptions_2025]
-- Broad measurement of meritocratic beliefs reveals distinct paths: perception vs preference, merit vs privilege
-- SEM (measurement error, latent paths) is a useful, transferable tool for other beliefs, criteria and domains [@meuleman_welfare_2020]
-- Limits: cross-sectional, one country; next: conjoint experiments and cross-country analysis
+- Findings: perceiving merit and endorsing privilege raise MJP; perceiving privilege lowers it
+- Part of a broader agenda on the policy feedback of commodification [@lindh_public_2015; @busemeyer_welfare_2020; @koos_moral_2019]; two prior longitudinal studies of ours, but not multidimensional [@castillo_perceptions_2025; @castillo_justification_2026]
+- Contribution: multidimensional measurement plus SEM disentangles distinct paths, net of measurement error [@meuleman_welfare_2020]
+- Limits: cross-sectional, one country; next: social structure (class, stratification, context), conjoint experiments, cross-country
 
 ::::
 
 
 ::: {.notes}
 
-To conclude, I want to make a few points.  
+To conclude, a few points.
 
-First, it's not enough to talk about meritocracy in general. Its dimensions matter, and they don't work in the same way. Perceiving merit and accepting privilege raise support for market-based welfare, while perceiving privilege lowers it. 
+First, we have shown that it is not enough to talk about meritocracy in general. Its dimensions matter and do not work the same way: perceiving merit and accepting privilege raise support for market-based welfare, while perceiving privilege lowers it.
 
-Second, we see this as a relevant contribution to welfare attitudes research on two fronts. It brings the market back in as an arena of distributive justice, and it positions meritocracy as an inequality belief that shapes these attitudes — and shapes them differently when we measure it multidimensionally. 
+Second, this work seeks to contribute to the welfare attitudes literature, particularly to the literature on the policy feedback effects of commodification, by positioning meritocratic beliefs as a key driver of preferences for market-based welfare. Our team has been pushing this link across a couple of publications, and we now extend it by measuring meritocracy in multiple dimensions.
 
-Third, beyond the substance, we believe the analytical strategy — using SEM to disentangle these dimensions — is a useful and transferable tool for other beliefs, criteria, and domains related to welfare. 
+Third, we also want to contribute on the methodological side. Modeling these beliefs as latent factors in an SEM separates measurement error from structure and recovers distinct paths that a summative index would obscure, an approach that is transferable to other beliefs and domains.
 
-Finally, of course, this work has limitations: it is cross-sectional and restricted to a single country, but we're now building survey experiments to decompose these paths causally and cross-country comparisons. Thank you.
+Finally, this work is cross-sectional and single-country. From here, our aim is more sociological: to embed these beliefs in social structure and examine how class, stratification, and context shape these relationships. In parallel, we are building conjoint experiments and cross-country comparisons. Thank you.
 
 
 :::
@@ -41,6 +41,10 @@ Finally, of course, this work has limitations: it is cross-sectional and restric
 
 ::: {.column width="50%"}
 ![](images/qr-code-jusmer.png){width="50%" fig-align="center"}
+
+
+<span style="color:white;">**Website:** <a href="https://jus-mer.com/" style="color:#4ea1ff;" target="_blank">https://jus-mer.com/</a></span>
+
 :::
 
 ::: {.column .column-right width="50%"}
